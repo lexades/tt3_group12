@@ -10,7 +10,7 @@ export default function Pricing(){
 
     const [assetSymbol,setassetSymbol]=useState('')
     const [price,setprice]=useState('')
-    const [timeStamp,setimeStamp]=useState('')
+    // [timeStamp,setimeStamp]=useState([])
 
     let Config = {
         headers: {
@@ -23,17 +23,16 @@ export default function Pricing(){
         Axios.post('https://849rs099m3.execute-api.ap-southeast-1.amazonaws.com/techtrek/pricing/historical',{}, Config)
         .then((response) => {
             //convert timestamp epoch datatype
-            var utcSeconds = response.data[0].timestamp;
-            var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-            d.setUTCSeconds(utcSeconds);//set to readable timestamp
-            console.log(d);
-            var datee=d.toLocaleDateString()
+            //const utcSeconds = response.data[0].timestamp;
+            // d.setUTCSeconds(utcSeconds);//set to readable timestamp
+            // console.log(d);
+            // var datee=d.toLocaleDateString();
 
                 //if select = price 
                 //show prices
                 setassetSymbol(response.data[0].assetSymbol);
                 setprice(response.data[0].price);
-                setimeStamp(datee);
+                //setimeStamp(response.data[0].timestamp);
 
             }
         );
@@ -48,17 +47,25 @@ export default function Pricing(){
             <tbody>
                 <tr>
                     <td>Asset Symbol</td>
-                    <td>{assetSymbol}</td>
+                   
                     <td>Price</td>
-                    <td>{price}</td>
-                    <td>TimeStamp</td>
-                    <td>{timeStamp}</td>
+                    
+                    
                 </tr>
                 <tr>
-                <td>
+                    
+                    <td>{assetSymbol}</td>
+                    
+                    <td>{price}</td>
+                    
+                    
+                </tr>
+                <tr>
+                <td colspan='3'>
+                
                     <input type='number' placeholder='Price'></input>
                     <input type='date'></input>
-                    </td>
+                </td>
                 </tr>
             </tbody>
             </table>

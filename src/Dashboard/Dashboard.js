@@ -9,18 +9,21 @@ function Dashboard(){
         <div className='dashbox'>
             <h1 className='welcome'>Welcome back, user.name!</h1>
             <marquee>Have a pleasant day with DBS!</marquee>
+            <Router> 
             <div>
                 <table>
                     <tr>
-                        <td><button>Balance</button></td>
-                        <td><button>Transaction</button></td>
-                        <td><button>Market</button></td>
-                    </tr>
-                    <tr>
-                        <Pricing/>
+                        <td><Link to="/balance"><button>Balance</button></Link></td>
+                        <td><Link to="/transaction"><button>Transfer</button></Link></td>
+                        <td><Link to="/market"><button>Market</button></Link></td>
                     </tr>
                 </table>
             </div>
+                <Switch>
+                    <Route path={"/market"} exact component={Pricing} />
+                </Switch>
+            </Router>
+            
         </div>
     )
 }
