@@ -7,7 +7,7 @@ function Dashboard(){
     return(
         <div className='dashbox'>
             <h1 className='welcome'>Welcome back, user.name!</h1>
-            <marquee>Have a pleasant banking experience with DBS!</marquee>
+            <marquee>Have a pleasant day with DBS!</marquee>
             <div>
                 <table>
                     <tr>
