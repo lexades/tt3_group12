@@ -22,10 +22,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 80px;
     width: 100%;
 }
 
-
+div {
+    padding-top: 17px;
+}
 
 nav {
     
@@ -88,7 +91,7 @@ nav a {
 
 nav a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #DDDDDD;
+    background-color: #8d3939;
     color: #254855;
 }
 

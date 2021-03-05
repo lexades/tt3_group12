@@ -1,8 +1,7 @@
 import React from 'react';
 
-var pigImage = require('./pig.jpg')
+var pigImage = require('./Money-trap-1.jpg')
 var dbsImage = require('./dbslogo_withname.jpg')
-
 
 export class Homepage extends React.Component {
   render() {
@@ -16,12 +15,8 @@ export class Homepage extends React.Component {
           <header>
             <a href="login.html"><img src={dbsImage.default} alt="Galaxys logo" width="180px" height="90px" style={{padding: '10px'}} /></a>
             <nav>
-              <a href="balance.html"><b>Balance</b></a>
-              <a href="transaction.html"><b>Transaction</b></a>
-              <a href="market.html"><b>Market</b></a>
               <a href="login.html"><b>Login</b></a>
               <div className="dropdown">
-                <button className="dropbtn"><a href="index.html"><b>Movies↡</b></a></button>
                 <div className="dropdown-content">
                   <a href="cash.html"><b>Cash Balance</b></a>
                   <a href="assets.html"><b>Assets</b></a>
@@ -29,12 +24,9 @@ export class Homepage extends React.Component {
               </div>
             </nav>
           </header>
-          <div>
-            <h1><center>DashBoard</center></h1>
-          </div>
-          <div className="content">
-            <div className="container">
-              <img src={pigImage.default} alt="Money" width="500px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+          <div className="content" >
+            <div className="container" >
+              <img src={pigImage.default} alt="Money" width="600px" height={384} style={{padding: '10px 10px 10px 30px'}} />
               <div style={{paddingLeft: '45px'}}>
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
               </div></div>
