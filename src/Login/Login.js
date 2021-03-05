@@ -6,11 +6,38 @@ import './Login.styles.css'
 
 export default function Login(){
 
-    const History=useHistory();
+    const history=useHistory();
 
-    const[username,setusername]=useState('');
-    const[password,setpassword]=useState('');
+    const[username,setusername]=useState(''); //Group12
+    const[password,setpassword]=useState(''); //Asu_MHFWvDbsXKE
     const[loginStatus,setLoginStatus]=useState('');
+
+
+    var Data = {
+        'username': username,
+        'password': password,
+    };
+
+    let Config = {
+        headers: {
+                'x-api-key': 'BDTv5isstyQr8aGI2xNp5CzqSYFCrtXPIAZV4Z40',
+        }
+    };
+
+    const handleLogin = () => {
+        Axios.post('https://849rs099m3.execute-api.ap-southeast-1.amazonaws.com/techtrek/login', Data, Config)
+        .then((response) => {
+            console.log(response);
+            if(!response.status===200) {
+                setLoginStatus(false);
+            } else {
+                setLoginStatus(true);
+                history.push('/dashboard');
+            }
+            console.log(loginStatus);
+        }
+    );
+};
 
     return(
         <div className='login_box'>
@@ -28,7 +55,7 @@ export default function Login(){
                     <td><input type='text' onChange={(e)=>{setpassword(e.target.value)}}></input></td>
                 </tr>
                 <tr><td colSpan='2'>
-                    <button className='login_button'>Login</button>
+                    <button className='login_button' onClick={handleLogin}>Login</button>
                     <p>{loginStatus}</p>
                     <a href="#forgotpwd">Forget password?</a>
             </td></tr>
