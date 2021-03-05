@@ -16,10 +16,11 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
     display: flex;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     height: 80px;
@@ -32,10 +33,12 @@ div {
 
 nav {
     
-    padding-top: 79px;
+    padding-top: 50px;
     padding-left: 0px;
+    padding-bottom: 50px;
     margin-left: 20px;
     overflow: hidden;
+    float: right;
 
 }
 
@@ -61,6 +64,7 @@ nav a {
 .dropdown {
     float: right;
     overflow: hidden;
+    text-color: #FFFFFF;
 }
 
 .dropdown .dropbtn {
