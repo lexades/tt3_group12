@@ -8,55 +8,53 @@ var NewComponent = React.createClass({
         <style dangerouslySetInnerHTML={{__html: "\ndiv.container {\n      display:inline-block;\n    }\n\t" }} />
         <div id="wrapper">
           <header>
-            <a href="login.html"><img src="galaxyslogo.jpg" alt="Galaxys logo" width="280px" height="90px" style={{padding: '10px'}} /></a>
+            <a href="login.html"><img src="dbs.jpg" alt="Galaxys logo" width="280px" height="90px" style={{padding: '10px'}} /></a>
             <nav>
               <a href="balance.html"><b>Balance</b></a>
-              <a href="transaction.html"><b>transaction</b></a>
+              <a href="transaction.html"><b>Transaction</b></a>
               <a href="market.html"><b>Market</b></a>
+              <a href="login.html"><b>Login</b></a>
               <div className="dropdown">
                 <button className="dropbtn"><a href="index.html"><b>Movies↡</b></a></button>
                 <div className="dropdown-content">
-                  <a href="index.html"><b>Now Showing</b></a>
-                  <a href="coming.html"><b>Coming Soon</b></a>
+                  <a href="cash.html"><b>Cash Balance</b></a>
+                  <a href="assets.html"><b>Assets</b></a>
                 </div>
               </div>
             </nav>
           </header>
           <div>
-            <center><img src="nowshowing.png" alt="Now Showing" width="46.2px" height="46.2" style={{paddingTop: '50px'}} /></center>
-            <h1><center>Now Showing</center></h1>
+            <h1><center>DashBoard</center></h1>
           </div>
           <div className="content">
             <div className="container">
-              <img src="ironman.jpg" alt="Iron Man" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+              <img src="money.jpg" alt="Money" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
               <div style={{paddingLeft: '45px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
+                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
               </div></div>
             <div className="container">
-              <img src="therevenant.jpg" alt="The Revenant" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+              <img src="investment.jpg" alt="Investment" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
+                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
+              </div></div>
+            <div className="container">
+              <img src="Navigation.jpg" alt="Navigation" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
+                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
+              </div></div>
+            <div className="container">
+              <img src="career.jpg" alt="Career" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
               <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
               </div></div>
             <div className="container">
-              <img src="thejunglebook.jpg" alt="The Jungle Book" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
-              </div></div>
-            <div className="container">
-              <img src="ipman3.jpg" alt="Ip Man 3" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
-              </div></div>
-            <div className="container">
-              <img src="slumdog.jpg" alt="Slumdog Millionaire" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
-              </div></div>
+            </div>
             <footer>
               <ul>
                 <li><a href="balance.html"><b>Balance</b></a></li>
                 <li><a href="transaction.html"><b>Transaction</b></a></li>
                 <li><a href="market.html"><b>Market</b></a></li>
+                <li><a href="login.html"><b>Login</b></a></li>
               </ul>
               <right><p>Follow Us:@TechTrek3_Group12</p></right>
               <b><small>© Copyright 2021 Group 12 - All rights Reserved.</small></b>
