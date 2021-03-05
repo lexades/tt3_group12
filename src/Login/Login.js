@@ -29,6 +29,22 @@ export default function Login() {
 		});
 	};
 
+    //before integration
+//     const handleLogin = () => {
+//         Axios.post('https://849rs099m3.execute-api.ap-southeast-1.amazonaws.com/techtrek/login', Data, Config)
+//         .then((response) => {
+//             console.log(response);
+//             if(!response.status===200) {
+//                 setLoginStatus(false);
+//             } else {
+//                 setLoginStatus(true);
+//                 history.push('/dashboard');
+//             }
+//             console.log(loginStatus);
+//         }
+//     );
+// };
+
 	return (
 		<div className="login_box">
 			<table>
