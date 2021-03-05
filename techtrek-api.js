@@ -61,6 +61,21 @@ function viewPastTransaction(accountKey) {
 	});
 }
 
+function buySell(accountKey, orderType, assetAmount) {
+	const api_url =
+		"https://849rs099m3.execute-api.ap-southeast-1.amazonaws.com/techtrek/transactions/add";
+
+	let data = {
+		accountKey: accountKey,
+		orderType: orderType,
+		assetAmount: assetAmount,
+	};
+
+	return axios.post(api_url, data, config).then((response) => {
+		return response.data;
+	});
+}
+
 const username = "Group12";
 const password = "Asu_MHFWvDbsXKE";
 
@@ -69,9 +84,12 @@ login(username, password).then((data) => {
 	// viewBalance(data.accountKey).then((data) => {
 	// 	console.log(data);
 	// });
-	viewPastTransaction(data.accountKey).then((data) => {
-		console.log(data);
-	});
+	// buySell(data.accountKey, "BUY", 20).then((data) => {
+	// 	console.log(data);
+	// });
+	// viewPastTransaction(data.accountKey).then((data) => {
+	// 	console.log(data);
+	// });
 });
 
 // viewHistoricalPricing().then((data) => {
