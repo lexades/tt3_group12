@@ -33,8 +33,8 @@ export class Homepage extends React.Component {
               <div style={{paddingLeft: '45px'}}>
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
               </div></div>
-            <div className="container">
-              <p style ={white}>The easiest way to trade.</p><p>Buy and sell your TTK digital assets with just a click of a button.</p><table>
+            <div className="container" style={{border-bottom:'200px'}}>
+              <p style ={white}>The easiest way to trade.</p><p style={white}>Buy and sell your TTK digital assets with just a click of a button.</p><table>
               </table>
             </div></div>
           <footer>
