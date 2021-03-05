@@ -26,24 +26,26 @@ const BuyAndSellAsset = (accountKey, orderType, assetAmount) => {
   });
 };
 
-BuyAndSellAsset(data.accountKey, "BUY", 20).then((data) => {
-  console.log(data);
-});
-
 const MarketPlace = () => {
   const [buyPrice, setBuyPrice] = useState("");
   const [buyTotal, setBuyTotal] = useState("");
   const [sellPrice, setSellPrice] = useState("");
   const [sellTotal, setSellTotal] = useState("");
 
-  const handleSubmitBuy = (e) => {
-    e.preventDefault();
-    console.log("buy data entered");
+  const handleSubmitBuy = () => {
+    //e.preventDefault();
+    console.log({ buyPrice });
+    BuyAndSellAsset(data.accountKey, "Buy", { buyTotal }).then((data) => {
+      console.log(data);
+    });
   };
 
-  const handleSubmitSell = (e) => {
-    e.preventDefault();
-    console.log("sell data entered");
+  const handleSubmitSell = () => {
+    //e.preventDefault();
+    console.log({ sellPrice });
+    BuyAndSellAsset(data.accountKey, "Sell", { sellTotal }).then((data) => {
+      console.log(data);
+    });
   };
 
   return (
@@ -62,9 +64,11 @@ const MarketPlace = () => {
       <h4>Buy Total: </h4>
       <input
         type="text"
+        value={buyPrice}
         onChange={(e) => {
           setBuyTotal(e.target.value);
         }}></input>
+      {/* slider */}
       <br />
       <button type="button" onClick={handleSubmitBuy}>
         Buy BTC
@@ -81,13 +85,22 @@ const MarketPlace = () => {
       <h4>Sell Total: </h4>
       <input
         type="text"
+        value={sellPrice}
         onChange={(e) => {
           setSellTotal(e.target.value);
         }}></input>
+      {/* slider */}
       <br />
       <button type="button" onClick={handleSubmitSell}>
         Sell BTC
       </button>
+      <br />
+      <br />
+      <h1>Balance Summary</h1>
+      <br />
+      <h3>Asset Balance: </h3>
+      <br />
+      <h3>Cash Balance: </h3>
     </div>
   );
 };
