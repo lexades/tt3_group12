@@ -2,6 +2,9 @@ import React from 'react';
 
 var pigImage = require('./Money-trap-1.jpg')
 var dbsImage = require('./dbslogo_withname.jpg')
+let white = {
+  color: "#FFFFFF"
+}
 
 export class Homepage extends React.Component {
   render() {
@@ -26,12 +29,12 @@ export class Homepage extends React.Component {
           </header>
           <div className="content" >
             <div className="container" >
-              <img src={pigImage.default} alt="Money" width="600px" height={384} style={{padding: '10px 10px 10px 30px'}} />
+              <img src={pigImage.default} alt="Money" width="600px" height={384} style={{padding: '100px 10px 10px 30px'}} />
               <div style={{paddingLeft: '45px'}}>
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
               </div></div>
             <div className="container">
-              <p>Navigate money with confidence</p><p>NAV Planner helps you track, protect, and grow your money on your terms.</p><table>
+              <p style ={white}>The easiest way to trade.</p><p>Buy and sell your TTK digital assets with just a click of a button.</p><table>
               </table>
             </div></div>
           <footer>
