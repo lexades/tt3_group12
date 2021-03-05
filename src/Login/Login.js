@@ -13,7 +13,7 @@ export default function Login(){
     const[loginStatus,setLoginStatus]=useState('');
 
     return(
-        <div>
+        <div className='login_box'>
             <table>
             <tbody>
                 <tr>
