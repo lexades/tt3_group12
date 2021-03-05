@@ -1,13 +1,16 @@
 import React from 'react'
 import {BrowserRouter as Router,Route,Switch,Link} from "react-router-dom"
 
+
 import './Dashboard.styles.css'
 import Pricing from '../Pricing/Pricing'
 
 function Dashboard(){
+
+   
     return(
         <div className='dashbox'>
-            <h1 className='welcome'>Welcome back, user.name!</h1>
+            <h1 className='welcome'>Welcome back, John</h1>
             <marquee>Have a pleasant day with DBS!</marquee>
             <Router> 
             <div>
