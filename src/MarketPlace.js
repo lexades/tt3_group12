@@ -26,6 +26,9 @@ const BuyAndSellAsset = (accountKey, orderType, assetAmount) => {
   });
 };
 
+const assetBalance = 0;
+const cashBalance = 0;
+
 const MarketPlace = () => {
   const [buyPrice, setBuyPrice] = useState("");
   const [buyTotal, setBuyTotal] = useState("");
@@ -36,14 +39,17 @@ const MarketPlace = () => {
     //e.preventDefault();
     console.log({ buyPrice });
     BuyAndSellAsset(data.accountKey, "Buy", { buyTotal }).then((data) => {
+      //console.log(data.map((key = { assetBalance, cashBalance }), { ...data }));
       console.log(data);
     });
   };
 
   const handleSubmitSell = () => {
     //e.preventDefault();
+
     console.log({ sellPrice });
     BuyAndSellAsset(data.accountKey, "Sell", { sellTotal }).then((data) => {
+      //console.log(data.map((key = { assetBalance, cashBalance }), { ...data }));
       console.log(data);
     });
   };
@@ -98,9 +104,9 @@ const MarketPlace = () => {
       <br />
       <h1>Balance Summary</h1>
       <br />
-      <h3>Asset Balance: </h3>
+      <h3>Asset Balance: {assetBalance}</h3>
       <br />
-      <h3>Cash Balance: </h3>
+      <h3>Cash Balance: {cashBalance}</h3>
     </div>
   );
 };
