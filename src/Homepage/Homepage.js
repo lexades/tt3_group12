@@ -28,7 +28,7 @@ export class Homepage extends React.Component {
             </nav>
           </header>
           <div className="content" >
-            <div className="container" >
+            <div className="container" style={{border:'50px'}}>
               <img src={pigImage.default} alt="Money" width="600px" height={384} style={{padding: '100px 10px 10px 30px'}} />
               <div style={{paddingLeft: '45px'}}>
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
