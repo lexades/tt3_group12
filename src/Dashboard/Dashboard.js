@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router,Route,Switch,Link} from "react-router-dom"
 
 import './Dashboard.styles.css'
+import Pricing from '../Pricing/Pricing'
 
 function Dashboard(){
     return(
@@ -14,6 +15,9 @@ function Dashboard(){
                         <td><button>Balance</button></td>
                         <td><button>Transaction</button></td>
                         <td><button>Market</button></td>
+                    </tr>
+                    <tr>
+                        <Pricing/>
                     </tr>
                 </table>
             </div>
