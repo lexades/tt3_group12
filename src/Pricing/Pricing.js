@@ -8,7 +8,7 @@ export default function Pricing(){
 
     const [assetSymbol,setassetSymbol]=useState('')
     const [price,setprice]=useState('')
-    const [timeStamp,setimeStamp]=useState('')
+    const [timeStamp,setimeStamp]=useState(Date())
 
     let Config = {
         headers: {
@@ -19,14 +19,17 @@ export default function Pricing(){
     const PricingList = () => {
         Axios.post('https://849rs099m3.execute-api.ap-southeast-1.amazonaws.com/techtrek/pricing/historical',{}, Config)
         .then((response) => {
-
+           
             //convert timestamp epoch datatype
             var utcSeconds = response.data[0].timestamp;
             var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
             d.setUTCSeconds(utcSeconds);//set to readable timestamp
             console.log(d);
+            var datee=d.toLocaleDateString()
 
-            console.log(response.data[0].timestamp);
+            setassetSymbol(response.data[0].assetSymbol);
+            setprice(response.data[0].price);
+            setimeStamp(datee);
             }
         );
     };
@@ -39,7 +42,10 @@ export default function Pricing(){
             <table>
             <tbody>
                 <tr>
-                    <td>hello</td>
+                    <td>Asset Symbol</td>
+                    <td>{assetSymbol}</td>
+                    <td>{price}</td>
+                    <td>{timeStamp}</td>
                 </tr>
             </tbody>
             </table>
