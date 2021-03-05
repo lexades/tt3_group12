@@ -150,17 +150,6 @@ h5 {
 }
 
 
-.booknow {
-    background-color: #4CAF50;
-    border: none;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 25px
-}
 
 .return {
     background-color: #C0C0C0;
@@ -175,22 +164,7 @@ h5 {
     margin-bottom: 20px;
 }
 
-.booknow a {
-    letter-spacing: 1px;
-    color: #FFFFFF;
-}
 
-.comingsoon {
-background-color: #FF0000;
-border: none;
-padding: 14px 16px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-cursor: pointer;
-border-radius: 25px
-}
 footer {
     position: fixed;
     left: 0;
@@ -224,20 +198,8 @@ footer right {
     
 }
 
-.trailer {
-    background-color: #7E7E7E;
-}
-
-.video {
-    text-align: center;
-    padding-bottom: 30px;
-}
 
 
-.seating{
-    padding-left:0px;
-    padding-bottom:30px;
-}
 
 .faqs {
     padding: 0px 50px;
