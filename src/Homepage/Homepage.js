@@ -1,3 +1,4 @@
+import './css.css';
 import React from 'react';
 
 var pigImage = require('./Money-trap-1.jpg')
@@ -16,7 +17,7 @@ export class Homepage extends React.Component {
       <div>
         <title>TechTrek 3 Group 12</title>
         <meta charSet="“utf-8”" />
-        <link rel="stylesheet" href="css.css" />
+        <link rel="stylesheet" href="./css.css" />
         <style dangerouslySetInnerHTML={{__html: "\ndiv.container {\n      display:inline-block;\n    }\n\t" }} />
         <div id="wrapper">
           <header>
