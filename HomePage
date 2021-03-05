@@ -33,34 +33,21 @@ var NewComponent = React.createClass({
                 <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
               </div></div>
             <div className="container">
-              <img src="investment.jpg" alt="Investment" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
-              </div></div>
-            <div className="container">
-              <img src="Navigation.jpg" alt="Navigation" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Click here to Learn More</b></a></button>
-              </div></div>
-            <div className="container">
-              <img src="career.jpg" alt="Career" width="240px" height={384} style={{padding: '10px 10px 10px 30px'}} />
-              <div style={{paddingLeft: '45px', paddingBottom: '10px'}}>
-                <button className="booknow"><a href="personaldetail.php" style={{textDecoration: 'none'}}><b>Buy Tickets</b></a></button>
-              </div></div>
-            <div className="container">
-            </div>
-            <footer>
-              <ul>
-                <li><a href="balance.html"><b>Balance</b></a></li>
-                <li><a href="transaction.html"><b>Transaction</b></a></li>
-                <li><a href="market.html"><b>Market</b></a></li>
-                <li><a href="login.html"><b>Login</b></a></li>
-              </ul>
-              <right><p>Follow Us:@TechTrek3_Group12</p></right>
-              <b><small>© Copyright 2021 Group 12 - All rights Reserved.</small></b>
-            </footer>
-          </div>
-        </div></div>
+              <p>Navigate money with confidence</p><p>NAV Planner helps you track, protect, and grow your money on your terms.</p><table>
+              </table>
+            </div></div>
+          <footer>
+            <ul>
+              <li><a href="balance.html"><b>Balance</b></a></li>
+              <li><a href="transaction.html"><b>Transaction</b></a></li>
+              <li><a href="market.html"><b>Market</b></a></li>
+              <li><a href="login.html"><b>Login</b></a></li>
+            </ul>
+            <right><p>Follow Us:@TechTrek3_Group12</p></right>
+            <b><small>© Copyright 2021 Group 12 - All rights Reserved.</small></b>
+          </footer>
+        </div>
+      </div>
     );
   }
 });
