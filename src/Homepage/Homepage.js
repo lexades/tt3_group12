@@ -43,14 +43,9 @@ export class Homepage extends React.Component {
               </table>
             </div></div>
           <footer>
-            <ul>
-              <li><a href="balance.html"><b>Balance</b></a></li>
-              <li><a href="transaction.html"><b>Transaction</b></a></li>
-              <li><a href="market.html"><b>Market</b></a></li>
-              <li><a href="login.html"><b>Login</b></a></li>
-            </ul>
             <right><p>Follow Us:@TechTrek3_Group12</p></right>
-            <b><small>© Copyright 2021 Group 12 - All rights Reserved.</small></b>
+            <right><p><b>© Copyright 2021 Group 12 - All rights Reserved.</b></p></right>
+
           </footer>
         </div>
       </div>
