@@ -34,6 +34,7 @@ export class Homepage extends React.Component {
               </div>
               </div>
             </div>
+
           <footer>
             <right><p>Follow Us:@TechTrek3_Group12</p></right>
             <right><p><b>© Copyright 2021 Group 12 - All rights Reserved.</b></p></right>
